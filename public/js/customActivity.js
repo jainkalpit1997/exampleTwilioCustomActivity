@@ -100,7 +100,7 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "to": "{{Contact.Attribute.TestDataEx.Phone}}" //<----This should map to your data extension name and phone number column
+            "to": "{{Contact.Attribute."Synch Data".TestDataEx.Phone}}" //<----This should map to your data extension name and phone number column
         }];
 
         payload['metaData'].isConfigured = true;
