@@ -56,7 +56,7 @@
             "body": "",
             "format": "json",
             "useJwt": true,
-            "timeout": 2000
+            "timeout": 2002
        },
        "stop": {
            "url": "https://testkalpitapp.herokuapp.com/stop",
