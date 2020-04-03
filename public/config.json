@@ -1,6 +1,5 @@
 {
     "workflowApiVersion": "1.1",
-    "key": "63b05bb8-556f-4a1c-92b1-796ba9645de4",
     "metaData": {
        "icon": "images/iconSmall.png",
        "category": "message"
@@ -18,26 +17,29 @@
             "inArguments": [
                 {
                   "email": "{{Contact.Default.EmailAddress}}",
-                    "to": "+441632960675"
+                    "from":"{{Contact.Attribute.TestDataEx.Phone}}",
+                    "to": "{{Contact.Attribute.TestDataEx.Phone}}"
+                    
                 }               
             ],
             "outArguments": [],
             "url": "https://testkalpitapp.herokuapp.com/journeybuilder/execute",
             "verb": "POST",
             "body": "",
+            "header": "",
             "format": "json",
-            "useJwt": false,
+            "useJwt": true,
             "timeout": 2000
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "63b05bb8-556f-4a1c-92b1-796ba9645de4",
+      "applicationExtensionKey": "3d7df560-e1af-447c-9421-04f961ad0290",
        "save": {
            "url": "https://testkalpitapp.herokuapp.com/save",
             "verb": "POST",
             "body": "",
             "format": "json",
-            "useJwt": false,
+            "useJwt": true,
             "timeout": 2000
        },
        "publish": {
@@ -45,7 +47,7 @@
             "verb": "POST",
             "body": "",
             "format": "json",
-            "useJwt": false,
+            "useJwt": true,
             "timeout": 2000
        },
        "validate": {
@@ -53,7 +55,7 @@
             "verb": "POST",
             "body": "",
             "format": "json",
-            "useJwt": false,
+            "useJwt": true,
             "timeout": 2000
        },
        "stop": {
@@ -61,7 +63,7 @@
             "verb": "POST",
             "body": "",
             "format": "json",
-            "useJwt": false,
+            "useJwt": true,
             "timeout": 2000
        }
     },
@@ -96,14 +98,14 @@
                     {
                         "from": {
                             "dataType": "Phone",
-                            "isNullable": false,
+                            "isNullable": true,
                             "direction": "out"   
                         }
                     },                    
                     {
                         "to": {
                             "dataType": "Phone",
-                            "isNullable": false,
+                            "isNullable": true,
                             "direction": "out"   
                         }
                     },
