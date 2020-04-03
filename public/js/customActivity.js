@@ -48,7 +48,9 @@ define([
         console.log('Has In arguments: '+JSON.stringify(inArguments));
 
         $.each(inArguments, function (index, inArgument) {
+         
             $.each(inArgument, function (key, val) {
+            console.log('Has In arguments: '+key+'  '+val);
 
                 if (key === 'accountSid') {
                     $('#accountSID').val(val);
@@ -89,7 +91,7 @@ define([
     }
 
     function save() {
-
+        console.log("In save ");
         var accountSid = $('#accountSID').val();
         var authToken = $('#authToken').val();
         var messagingService = $('#messagingService').val();
@@ -100,8 +102,9 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-          //  "to": "{{Contact.Attribute.TestDataEx.Phone}}" //<----This should map to your data extension name and phone number column
-            "to": "+441632960675"
+             "from": "{{Contact.Attribute.TestDataEx.Phone}}",
+            "to": "{{Contact.Attribute.TestDataEx.Phone}}" //<----This should map to your data extension name and phone number column
+          //  "to": "+441632960675"
         }];
 
         payload['metaData'].isConfigured = true;
