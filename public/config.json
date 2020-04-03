@@ -16,11 +16,13 @@
         "execute": {
             "inArguments": [
                 {
-                  "email": "{{Contact.Default.EmailAddress}}",
-                    "from":"{{Contact.Attribute.TestDataEx.Phone}}",
-                    "to": "{{Contact.Attribute.TestDataEx.Phone}}"
-                    
-                }               
+                  "email": "{{Contact.Default.EmailAddress}}"
+                },    
+                {  "from":"{{Contact.Attribute.TestDataEx.Phone}}"
+                },
+                {   "to": "{{Contact.Attribute.TestDataEx.Phone}}"
+                }   
+                               
             ],
             "outArguments": [],
             "url": "https://testkalpitapp.herokuapp.com/journeybuilder/execute",
