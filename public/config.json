@@ -17,7 +17,6 @@
             "inArguments": [
                 {
                   "email": "{{Contact.Default.EmailAddress}}",
-                 // "to": "{{Contact.Attribute.TestDataEx.Phone}}" 
                     "to": "+441632960675"
                 }               
             ],
