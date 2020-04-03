@@ -102,9 +102,9 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-             "from": "{{Contact.Attribute.TestDataEx.Phone}}",
-            "to": "{{Contact.Attribute.TestDataEx.Phone}}" //<----This should map to your data extension name and phone number column
-          //  "to": "+441632960675"
+         //    "from": "{{Contact.Attribute.TestDataEx.Phone}}",
+         //   "to": "{{Contact.Attribute.TestDataEx.Phone}}" //<----This should map to your data extension name and phone number column
+            "to": "+918890338219"
         }];
 
         payload['metaData'].isConfigured = true;
