@@ -19,9 +19,7 @@
                 {
                   "email": "{{Contact.Default.EmailAddress}}"
                 },    
-                {  "from":"{{Contact.Attribute.TestDataEx.Phone}}"
-                },
-                {   "to": "{{Contact.Attribute.TestDataEx.Phone}}"
+                {   "to": "+918890338219"
                 }   
                                
             ],
