@@ -31,7 +31,7 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "3d7df560-e1af-447c-9421-04f961ad0290",
+      "applicationExtensionKey": "63b05bb8-556f-4a1c-92b1-796ba9645de4",
        "save": {
            "url": "https://testkalpitapp.herokuapp.com/save",
             "verb": "POST",
