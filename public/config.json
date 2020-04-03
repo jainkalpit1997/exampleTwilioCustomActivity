@@ -18,7 +18,9 @@
             "inArguments": [
                 {
                   "email": "{{Contact.Default.EmailAddress}}"
-                },    
+                },  
+                {  "from":"{{Contact.Attribute.TestDataEx.Phone}}"
+                },
                 {   "to": "+918890338219"
                 }   
                                
@@ -36,7 +38,7 @@
     "configurationArguments": {
       "applicationExtensionKey": "3d7df560-e1af-447c-9421-04f961ad0290",
        "save": {
-           "url": "https://testkalpitapp.herokuapp.com/save",
+           "url": "https://testkalpitapp.herokuapp.com/journeybuilder/save",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -44,7 +46,7 @@
             "timeout": 2000
        },
        "publish": {
-           "url": "https://testkalpitapp.herokuapp.com/publish",
+           "url": "https://testkalpitapp.herokuapp.com/journeybuilder/publish",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -52,7 +54,7 @@
             "timeout": 2000
        },
        "validate": {
-           "url": "https://testkalpitapp.herokuapp.com/validate",
+           "url": "https://testkalpitapp.herokuapp.com/journeybuilder/validate",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -60,7 +62,7 @@
             "timeout": 2002
        },
        "stop": {
-           "url": "https://testkalpitapp.herokuapp.com/stop",
+           "url": "https://testkalpitapp.herokuapp.com/journeybuilder/stop",
             "verb": "POST",
             "body": "",
             "format": "json",
