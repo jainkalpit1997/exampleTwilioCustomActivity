@@ -91,7 +91,7 @@ define([
     }
 
     function save() {
-        console.log("In save ");
+        console.log("In save 1");
         var accountSid = $('#accountSID').val();
         var authToken = $('#authToken').val();
         var messagingService = $('#messagingService').val();
