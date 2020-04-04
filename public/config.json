@@ -19,9 +19,9 @@
         {"to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}"},
         {"accountSid":""},
         {"authToken":""},
-        {"messagingService",""},
-         {"body",""},
-        {"from",""}
+        {"messagingService":""},
+         {"body":""},
+        {"from":""}
       ],
       "outArguments": [],
       "url": "https://requestbin.net/r/178955p1/execute",
