@@ -44,7 +44,7 @@ define([
          );
 
         var inArguments = hasInArguments ? payload['arguments'].execute.inArguments : {};
-        alert('In argument alert '+JSON.stringify(inArguments));
+        
         console.log('Has In arguments: '+JSON.stringify(inArguments));
 
         $.each(inArguments, function (index, inArgument) {
@@ -111,7 +111,7 @@ define([
         }];
 
         payload['metaData'].isConfigured = true;
-        alert("alerrt function"+JSON.stringify(payload));
+        
         console.log("Payload on SAVE function: "+JSON.stringify(payload));
         connection.trigger('updateActivity', payload);
 
