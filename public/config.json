@@ -16,6 +16,8 @@
     "arguments": {
         "execute": {
             "inArguments": [
+                { "contactKey" : "{{Contact.Key}}"
+                },
                 {
                   "email": "{{Contact.Default.EmailAddress}}"
                 },  
@@ -34,7 +36,7 @@
         }
     },
     "configurationArguments": {
-      
+       "applicationExtensionKey": "3d7df560-e1af-447c-9421-04f961ad0290",
        "save": {
            "url": "https://testkalpitapp.herokuapp.com/journeybuilder/save",
             "verb": "POST",
@@ -116,7 +118,14 @@
                             "isNullable": false,
                             "direction": "out"   
                         }
-                    },                    
+                    }, 
+                    {
+                        "contactKey": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "out"   
+                        }
+                    }, 
                     {
                         "email": {
                             "dataType": "Email",
