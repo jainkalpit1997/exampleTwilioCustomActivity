@@ -101,9 +101,7 @@ define([
             "accountSid": accountSid,
             "authToken": authToken,
             "messagingService": messagingService,
-            "body": body,
-            "contactKey" : "{{Contact.Key}}",
-            "to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}" 
+            "body": body
         }];
 
         payload['metaData'].isConfigured = true;
