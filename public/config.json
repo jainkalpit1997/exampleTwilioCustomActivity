@@ -29,7 +29,7 @@
             "body": "",
             "header": "",
             "format": "json",
-            "useJwt": true,
+            "useJwt": false,
             "timeout": 2000
         }
     },
@@ -40,7 +40,7 @@
             "verb": "POST",
             "body": "",
             "format": "json",
-            "useJwt": true,
+            "useJwt": false,
             "timeout": 2000
        },
        "publish": {
@@ -48,7 +48,7 @@
             "verb": "POST",
             "body": "",
             "format": "json",
-            "useJwt": true,
+            "useJwt": false,
             "timeout": 2000
        },
        "validate": {
@@ -56,7 +56,7 @@
             "verb": "POST",
             "body": "",
             "format": "json",
-            "useJwt": true,
+            "useJwt": false,
             "timeout": 2002
        },
        "stop": {
@@ -64,7 +64,7 @@
             "verb": "POST",
             "body": "",
             "format": "json",
-            "useJwt": true,
+            "useJwt": false,
             "timeout": 2000
        }
     },
