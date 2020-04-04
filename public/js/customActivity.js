@@ -104,8 +104,8 @@ define([
             "body": body,
            // "from": "+18304235288",
           //  "from": "{{Contact.Attribute.TestDataEx.Phone}}",
-         //   "to": "{{Contact.Attribute.TestDataEx.Phone}}" //<----This should map to your data extension name and phone number column
-            "to": "+918890338219"
+           "to": "{{Contact.Attribute.TestDataEx.Phone}}" //<----This should map to your data extension name and phone number column
+          //  "to": "+918890338219"
         }];
 
         payload['metaData'].isConfigured = true;
