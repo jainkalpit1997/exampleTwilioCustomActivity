@@ -1,141 +1,80 @@
 {
-    
-    "workflowApiVersion": "1.1",
-    "metaData": {
-       "icon": "images/iconSmall.png",
-       "category": "message"
-    },
-    "type": "REST",
-    "lang": {
-       "en-US": {
-           "name": "Twilio SMS",
-           "description": "Send Twilio SMS with Journey Builder",
-           "TwilioMessage":"test"
-       }
-    },
-    "arguments": {
-        "execute": {
-            "inArguments": [
-                { "contactKey" : "{{Contact.Key}}"
-                },
-                {
-                  "email": "{{Contact.Default.EmailAddress}}"
-                },  
-                {   "to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}" 
-                }   
-                               
-            ],
-            "outArguments": [],
-            "url": "https://requestbin.net/r/11ae5hb1/journeybuilder/execute",
-            "verb": "POST",
-            "body": "",
-            "header": "",
-            "format": "json",
-            "useJwt": true,
-            "timeout": 2000
-        }
-    },
-    "configurationArguments": {
-       "applicationExtensionKey": "3d7df560-e1af-447c-9421-04f961ad0290",
-       "save": {
-           "url": "https://requestbin.net/r/11ae5hb1/journeybuilder/save",
-            "verb": "POST",
-            "body": "",
-            "format": "json",
-            "useJwt": true,
-            "timeout": 2000
-       },
-       "publish": {
-           "url": "https://requestbin.net/r/11ae5hb1/journeybuilder/publish",
-            "verb": "POST",
-            "body": "",
-            "format": "json",
-            "useJwt": true,
-            "timeout": 2000
-       },
-       "validate": {
-           "url": "https://requestbin.net/r/11ae5hb1/journeybuilder/validate",
-            "verb": "POST",
-            "body": "",
-            "format": "json",
-            "useJwt": true,
-            "timeout": 2002
-       },
-       "stop": {
-           "url": "https://requestbin.net/r/11ae5hb1/journeybuilder/stop",
-            "verb": "POST",
-            "body": "",
-            "format": "json",
-            "useJwt": true,
-            "timeout": 2000
-       }
-    },
-    "wizardSteps": [
-       { "label": "Create SMS Message", "key": "step1" }
-    ],
-    "userInterfaces": {
-       "configModal": {
-           "height": 600,
-           "width": 800,
-           "fullscreen": false
-       }
-    },
-    "schema": {
-        "arguments": {
-            "execute": {
-                "inArguments": [
-                    {
-                        "accountSid": {
-                            "dataType": "String",
-                            "isNullable": false,
-                            "direction": "in"   
-                        }
-                    },                    
-                    {
-                        "authToken": {
-                            "dataType": "String",
-                            "isNullable": false,
-                            "direction": "in"   
-                        }
-                    },                    
-                    {
-                        "from": {
-                            "dataType": "Phone",
-                            "isNullable": true,
-                            "direction": "in"   
-                        }
-                    },                    
-                    {
-                        "to": {
-                            "dataType": "String",
-                            "isNullable": true,
-                            "direction": "in"   
-                        }
-                    },
-                    {
-                        "body": {
-                            "dataType": "String",
-                            "isNullable": false,
-                            "direction": "in"   
-                        }
-                    }, 
-                    {
-                        "contactKey": {
-                            "dataType": "String",
-                            "isNullable": false,
-                            "direction": "in"   
-                        }
-                    }, 
-                    {
-                        "email": {
-                            "dataType": "Email",
-                            "isNullable": true,
-                            "direction": "in"
-                        }
-                    }
-                ],
-                "outArguments": []
-            }
-        }
-    }
+
+	"workflowApiVersion": "1.1",
+	"metaData": {
+		"icon": "images/iconSmall.png",
+		"category": "message"
+	},
+	"type": "REST",
+	"lang": {
+		"en-US": {
+			"name": "Twilio SMS",
+			"description": "Send Twilio SMS with Journey Builder",
+			"TwilioMessage": "test"
+		}
+	},
+	"arguments": {
+		"execute": {
+			"inArguments": [{
+					"contactKey": "{{Contact.Key}}"
+				},
+				{
+					"to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}"
+				}
+			],
+			"url": "https://requestbin.net/r/11ae5hb1/journeybuilder/execute",
+			"verb": "POST",
+			"body": "",
+			"header": "",
+			"format": "json",
+			"useJwt": true,
+			"timeout": 2000
+		}
+	},
+	"configurationArguments": {
+		"applicationExtensionKey": "3d7df560-e1af-447c-9421-04f961ad0290",
+		"save": {
+			"url": "https://requestbin.net/r/11ae5hb1/journeybuilder/save",
+			"verb": "POST",
+			"body": "",
+			"format": "json",
+			"useJwt": true,
+			"timeout": 2000
+		},
+		"publish": {
+			"url": "https://requestbin.net/r/11ae5hb1/journeybuilder/publish",
+			"verb": "POST",
+			"body": "",
+			"format": "json",
+			"useJwt": true,
+			"timeout": 2000
+		},
+		"validate": {
+			"url": "https://requestbin.net/r/11ae5hb1/journeybuilder/validate",
+			"verb": "POST",
+			"body": "",
+			"format": "json",
+			"useJwt": true,
+			"timeout": 2002
+		},
+		"stop": {
+			"url": "https://requestbin.net/r/11ae5hb1/journeybuilder/stop",
+			"verb": "POST",
+			"body": "",
+			"format": "json",
+			"useJwt": true,
+			"timeout": 2000
+		}
+	},
+	"wizardSteps": [{
+		"label": "Create SMS Message",
+		"key": "step1"
+	}],
+	"userInterfaces": {
+		"configModal": {
+			"height": 600,
+			"width": 800,
+			"fullscreen": false
+		}
+	}
 }
