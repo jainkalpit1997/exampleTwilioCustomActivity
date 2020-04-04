@@ -19,7 +19,7 @@
                 {
                   "email": "{{Contact.Default.EmailAddress}}"
                 },  
-                {  "from": "+18304235288",
+                {  "from": "+18304235288"
                 },
                 {   "to": "+918890338219"
                 }   
