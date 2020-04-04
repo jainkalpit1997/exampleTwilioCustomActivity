@@ -5,7 +5,7 @@
        "icon": "images/iconSmall.png",
        "category": "message"
     },
-    "type": "REST",
+    "type": "REST-1",
     "lang": {
        "en-US": {
            "name": "Twilio SMS",
