@@ -107,7 +107,7 @@ define([
             "email": "{{Contact.Default.EmailAddress}}",
             "contactKey" : "{{Contact.Key}}",
            // "to": "{{Contact.Attribute.TestDataEx.Phone}}" //<----This should map to your data extension name and phone number column
-            "to": "+918890338219"
+            "to": "{{Contact.Attribute.'Synch Data'.TestDataEx.Phone}}" 
         }];
 
         payload['metaData'].isConfigured = true;
