@@ -26,7 +26,7 @@
                                
             ],
             "outArguments": [],
-            "url": "https://testkalpitapp.herokuapp.com/journeybuilder/execute",
+            "url": "https://enymx2tolbv09.x.pipedream.net/journeybuilder/execute",
             "verb": "POST",
             "body": "",
             "header": "",
@@ -38,7 +38,7 @@
     "configurationArguments": {
        "applicationExtensionKey": "3d7df560-e1af-447c-9421-04f961ad0290",
        "save": {
-           "url": "https://testkalpitapp.herokuapp.com/journeybuilder/save",
+           "url": "https://enymx2tolbv09.x.pipedream.net/journeybuilder/save",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -46,7 +46,7 @@
             "timeout": 2000
        },
        "publish": {
-           "url": "https://testkalpitapp.herokuapp.com/journeybuilder/publish",
+           "url": "https://enymx2tolbv09.x.pipedream.net/journeybuilder/publish",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -54,7 +54,7 @@
             "timeout": 2000
        },
        "validate": {
-           "url": "https://testkalpitapp.herokuapp.com/journeybuilder/validate",
+           "url": "https://enymx2tolbv09.x.pipedream.net/journeybuilder/validate",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -62,7 +62,7 @@
             "timeout": 2002
        },
        "stop": {
-           "url": "https://testkalpitapp.herokuapp.com/journeybuilder/stop",
+           "url": "https://enymx2tolbv09.x.pipedream.net/journeybuilder/stop",
             "verb": "POST",
             "body": "",
             "format": "json",
