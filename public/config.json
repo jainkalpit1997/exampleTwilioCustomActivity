@@ -21,7 +21,7 @@
                 {
                   "email": "{{Contact.Default.EmailAddress}}"
                 },  
-                {   "to": "{{Contact.Attribute.TwilioSMSSend.Phone}}" 
+                {   "to": "{{Contact.Attribute.TwilioSMSSend.PhoneNumber}}" 
                 }   
                                
             ],
@@ -107,7 +107,7 @@
                     },                    
                     {
                         "to": {
-                            "dataType": "Phone",
+                            "dataType": "String",
                             "isNullable": true,
                             "direction": "in"   
                         }
