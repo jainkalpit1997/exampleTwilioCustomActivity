@@ -34,7 +34,7 @@
   "configurationArguments": {
     "applicationExtensionKey": "3d7df560-e1af-447c-9421-04f961ad0290",
     "save": {
-      "url": "https://requestbin.net/r/178955p1/journeybuilder/save",
+      "url": "https://requestbin.net/r/178955p1/save",
       "verb": "POST",
       "body": "",
       "format": "json",
@@ -50,7 +50,7 @@
       "timeout": 2000
     },
     "validate": {
-      "url": "https://requestbin.net/r/178955p1/journeybuilder/validate",
+      "url": "https://requestbin.net/r/178955p1/validate",
       "verb": "POST",
       "body": "",
       "format": "json",
@@ -58,7 +58,7 @@
       "timeout": 2002
     },
     "stop": {
-      "url": "https://requestbin.net/r/178955p1/journeybuilder/stop",
+      "url": "https://requestbin.net/r/178955p1/stop",
       "verb": "POST",
       "body": "",
       "format": "json",
