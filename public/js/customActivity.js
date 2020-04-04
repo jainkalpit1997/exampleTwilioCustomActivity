@@ -44,7 +44,7 @@ define([
          );
 
         var inArguments = hasInArguments ? payload['arguments'].execute.inArguments : {};
-
+        alert('In argument alert '+JSON.stringify(inArguments));
         console.log('Has In arguments: '+JSON.stringify(inArguments));
 
         $.each(inArguments, function (index, inArgument) {
