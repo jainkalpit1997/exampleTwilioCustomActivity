@@ -21,7 +21,7 @@
                 {
                   "email": "{{Contact.Default.EmailAddress}}"
                 },  
-                {   "to": "+918890338219"
+                {   "to": "{{Contact.Attribute."Synch Data".TestDataEx.Phone}}" 
                 }   
                                
             ],
