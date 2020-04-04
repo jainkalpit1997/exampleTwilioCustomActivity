@@ -15,9 +15,9 @@ define([
 
     $(window).ready(onRender);
 
-    connection.on('initActivity', initialize);
-    connection.on('requestedTokens', onGetTokens);
-    connection.on('requestedEndpoints', onGetEndpoints);
+    console.log('init'+connection.on('initActivity', initialize));
+    console.log('On get tokens'+connection.on('requestedTokens', onGetTokens));
+    console.log('On get end points'+connection.on('requestedEndpoints', onGetEndpoints));
 
     connection.on('clickedNext', save);
     //connection.on('clickedBack', onClickedBack);
@@ -25,9 +25,9 @@ define([
 
     function onRender() {
         // JB will respond the first time 'ready' is called with 'initActivity'
-        connection.trigger('ready');
-        connection.trigger('requestTokens');
-        connection.trigger('requestEndpoints');
+        console.log('Ready '+connection.trigger('ready'));
+        console.log('Request Tokens '+connection.trigger('requestTokens'));
+        console.log('Request End points '+connection.trigger('requestEndpoints'));
     }
 
   function initialize(data) {
@@ -42,7 +42,7 @@ define([
             payload['arguments'].execute.inArguments &&
             payload['arguments'].execute.inArguments.length > 0
          );
-
+         console.log('hasInArguments'+ hasInArguments);
         var inArguments = hasInArguments ? payload['arguments'].execute.inArguments : {};
         
         console.log('Has In arguments: '+JSON.stringify(inArguments));
