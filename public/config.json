@@ -1,80 +1,133 @@
 {
-
-	"workflowApiVersion": "1.1",
-	"metaData": {
-		"icon": "images/iconSmall.png",
-		"category": "message"
-	},
-	"type": "REST",
-	"lang": {
-		"en-US": {
-			"name": "Twilio SMS",
-			"description": "Send Twilio SMS with Journey Builder",
-			"TwilioMessage": "test"
-		}
-	},
-	"arguments": {
-		"execute": {
-			"inArguments": [{
-					"contactKey": "{{Contact.Key}}"
-				},
-				{
-					"to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}"
-				}
-			],
-			"url": "https://testkalpitapp.herokuapp.com/journeybuilder/execute",
-			"verb": "POST",
-			"body": "",
-			"header": "",
-			"format": "json",
-			"useJwt": true,
-			"timeout": 2000
-		}
-	},
-	"configurationArguments": {
-		"applicationExtensionKey": "3d7df560-e1af-447c-9421-04f961ad0290",
-		"save": {
-			"url": "https://testkalpitapp.herokuapp.com/journeybuilder/save",
-			"verb": "POST",
-			"body": "",
-			"format": "json",
-			"useJwt": true,
-			"timeout": 2000
-		},
-		"publish": {
-			"url": "https://testkalpitapp.herokuapp.com/journeybuilder/publish",
-			"verb": "POST",
-			"body": "",
-			"format": "json",
-			"useJwt": true,
-			"timeout": 2000
-		},
-		"validate": {
-			"url": "https://testkalpitapp.herokuapp.com/journeybuilder/validate",
-			"verb": "POST",
-			"body": "",
-			"format": "json",
-			"useJwt": true,
-			"timeout": 2002
-		},
-		"stop": {
-			"url": "https://testkalpitapp.herokuapp.com/journeybuilder/stop",
-			"verb": "POST",
-			"body": "",
-			"format": "json",
-			"useJwt": true,
-			"timeout": 2000
-		}
-	},
-	"wizardSteps": [{
-		"label": "Create SMS Message",
-		"key": "step1"
-	}],
-	"userInterfaces": {
-		"configModal": {
-			"height": 600,
-			"width": 800,
-			"fullscreen": false
-		}
-	}
+  "workflowApiVersion": "1.1",
+  "metaData": {
+    "icon": "images/iconSmall.png",
+    "category": "message"
+  },
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "Twilio SMS",
+      "description": "Send Twilio SMS with Journey Builder",
+      "TwilioMessage": "test"
+    }
+  },
+  "arguments": {
+    "execute": {
+      "inArguments": [
+        {
+          "contactKey": "{{Contact.Key}}"
+        },
+        {
+          "to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}"
+        }
+      ],
+      "outArguments": [],
+      "url": "https://testkalpitapp.herokuapp.com/journeybuilder/execute",
+      "verb": "POST",
+      "body": "",
+      "format": "json",
+      "useJwt": false,
+      "timeout": 2000
+    }
+  },
+  "configurationArguments": {
+    "applicationExtensionKey": "3d7df560-e1af-447c-9421-04f961ad0290",
+    "save": {
+      "url": "https://testkalpitapp.herokuapp.com/journeybuilder/save",
+      "verb": "POST",
+      "body": "",
+      "format": "json",
+      "useJwt": false,
+      "timeout": 2000
+    },
+    "publish": {
+      "url": "https://testkalpitapp.herokuapp.com/journeybuilder/publish",
+      "verb": "POST",
+      "body": "",
+      "format": "json",
+      "useJwt": false,
+      "timeout": 2000
+    },
+    "validate": {
+      "url": "https://testkalpitapp.herokuapp.com/journeybuilder/validate",
+      "verb": "POST",
+      "body": "",
+      "format": "json",
+      "useJwt": false,
+      "timeout": 2002
+    },
+    "stop": {
+      "url": "https://testkalpitapp.herokuapp.com/journeybuilder/stop",
+      "verb": "POST",
+      "body": "",
+      "format": "json",
+      "useJwt": false,
+      "timeout": 2000
+    }
+  },
+  "wizardSteps": [
+    {
+      "label": "Create SMS Message",
+      "key": "step1"
+    }
+  ],
+  "userInterfaces": {
+    "configModal": {
+      "height": 600,
+      "width": 800,
+      "fullscreen": false
+    }
+  },
+  "schema": {
+    "arguments": {
+      "execute": {
+        "inArguments": [
+          {
+            "accountSid": {
+              "dataType": "String",
+              "isNullable": false,
+              "direction": "out"
+            }
+          },
+          {
+            "authToken": {
+              "dataType": "String",
+              "isNullable": false,
+              "direction": "out"
+            }
+          },
+          {
+            "from": {
+              "dataType": "Phone",
+              "isNullable": false,
+              "direction": "out"
+            }
+          },
+          {
+            "to": {
+              "dataType": "Phone",
+              "isNullable": false,
+              "direction": "out"
+            }
+          },
+          {
+            "body": {
+              "dataType": "String",
+              "isNullable": false,
+              "direction": "out"
+            }
+          },
+          {
+            "email": {
+              "dataType": "Email",
+              "isNullable": true,
+              "direction": "out"
+            }
+          }
+        ],
+        "outArguments": []
+      }
+    }
+  }
 }
