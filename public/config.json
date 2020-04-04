@@ -1,5 +1,5 @@
 {
-    "key": "3d7df560-e1af-447c-9421-04f961ad0290",
+    
     "workflowApiVersion": "1.1",
     "metaData": {
        "icon": "images/iconSmall.png",
@@ -34,7 +34,7 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "3d7df560-e1af-447c-9421-04f961ad0290",
+      
        "save": {
            "url": "https://testkalpitapp.herokuapp.com/journeybuilder/save",
             "verb": "POST",
