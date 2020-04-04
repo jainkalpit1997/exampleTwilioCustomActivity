@@ -26,7 +26,7 @@
                                
             ],
             "outArguments": [],
-            "url": "https://enymx2tolbv09.x.pipedream.net/journeybuilder/execute",
+            "url": "http://requestbin.net/r/11ae5hb1/journeybuilder/execute",
             "verb": "POST",
             "body": "",
             "header": "",
@@ -38,7 +38,7 @@
     "configurationArguments": {
        "applicationExtensionKey": "3d7df560-e1af-447c-9421-04f961ad0290",
        "save": {
-           "url": "https://enymx2tolbv09.x.pipedream.net/journeybuilder/save",
+           "url": "http://requestbin.net/r/11ae5hb1/journeybuilder/save",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -46,7 +46,7 @@
             "timeout": 2000
        },
        "publish": {
-           "url": "https://enymx2tolbv09.x.pipedream.net/journeybuilder/publish",
+           "url": "http://requestbin.net/r/11ae5hb1/journeybuilder/publish",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -54,7 +54,7 @@
             "timeout": 2000
        },
        "validate": {
-           "url": "https://enymx2tolbv09.x.pipedream.net/journeybuilder/validate",
+           "url": "http://requestbin.net/r/11ae5hb1/journeybuilder/validate",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -62,7 +62,7 @@
             "timeout": 2002
        },
        "stop": {
-           "url": "https://enymx2tolbv09.x.pipedream.net/journeybuilder/stop",
+           "url": "http://requestbin.net/r/11ae5hb1/journeybuilder/stop",
             "verb": "POST",
             "body": "",
             "format": "json",
