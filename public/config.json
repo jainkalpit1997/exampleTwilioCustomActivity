@@ -23,7 +23,7 @@
         }
       ],
       "outArguments": [],
-      "url": "https://requestbin.net/r/178955p1/journeybuilder/execute",
+      "url": "https://requestbin.net/r/178955p1/execute",
       "verb": "POST",
       "body": "",
       "format": "json",
@@ -42,7 +42,7 @@
       "timeout": 2000
     },
     "publish": {
-      "url": "https://requestbin.net/r/178955p1/journeybuilder/publish",
+      "url": "https://requestbin.net/r/178955p1/publish",
       "verb": "POST",
       "body": "",
       "format": "json",
