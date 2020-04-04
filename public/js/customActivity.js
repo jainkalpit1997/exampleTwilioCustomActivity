@@ -15,9 +15,9 @@ define([
 
     $(window).ready(onRender);
 
-    console.log('init'+connection.on('initActivity', initialize));
-    console.log('On get tokens'+connection.on('requestedTokens', onGetTokens));
-    console.log('On get end points'+connection.on('requestedEndpoints', onGetEndpoints));
+    console.log('init'+JSON.stringify(connection.on('initActivity', initialize)));
+    console.log('On get tokens'+JSON.stringify(connection.on('requestedTokens', onGetTokens)));
+    console.log('On get end points'+JSON.stringify(connection.on('requestedEndpoints', onGetEndpoints)));
 
     connection.on('clickedNext', save);
     //connection.on('clickedBack', onClickedBack);
@@ -25,9 +25,9 @@ define([
 
     function onRender() {
         // JB will respond the first time 'ready' is called with 'initActivity'
-        console.log('Ready '+connection.trigger('ready'));
-        console.log('Request Tokens '+connection.trigger('requestTokens'));
-        console.log('Request End points '+connection.trigger('requestEndpoints'));
+        console.log('Ready '+JSON.stringify(connection.trigger('ready')));
+        console.log('Request Tokens '+ JSON.stringify(connection.trigger('requestTokens')));
+        console.log('Request End points '+JSON.stringify(connection.trigger('requestEndpoints')));
     }
 
   function initialize(data) {
