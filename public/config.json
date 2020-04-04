@@ -24,7 +24,7 @@
         {"from":""}
       ],
       "outArguments": [],
-      "url": "https://requestbin.net/r/178955p1/execute",
+      "url": "https://testkalpitapp.herokuapp.com/execute",
       "verb": "POST",
       "body": "",
       "format": "json",
@@ -35,7 +35,7 @@
   "configurationArguments": {
     "applicationExtensionKey": "3d7df560-e1af-447c-9421-04f961ad0290",
     "save": {
-      "url": "https://requestbin.net/r/178955p1/save",
+      "url": "https://testkalpitapp.herokuapp.com/save",
       "verb": "POST",
       "body": "",
       "format": "json",
@@ -43,7 +43,7 @@
       "timeout": 2000
     },
     "publish": {
-      "url": "https://requestbin.net/r/178955p1/publish",
+      "url": "https://testkalpitapp.herokuapp.com/publish",
       "verb": "POST",
       "body": "",
       "format": "json",
@@ -51,7 +51,7 @@
       "timeout": 2000
     },
     "validate": {
-      "url": "https://requestbin.net/r/178955p1/validate",
+      "url": "https://testkalpitapp.herokuapp.com/validate",
       "verb": "POST",
       "body": "",
       "format": "json",
@@ -59,7 +59,7 @@
       "timeout": 2002
     },
     "stop": {
-      "url": "https://requestbin.net/r/178955p1/stop",
+      "url": "https://testkalpitapp.herokuapp.com/stop",
       "verb": "POST",
       "body": "",
       "format": "json",
