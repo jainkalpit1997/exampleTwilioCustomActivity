@@ -15,12 +15,13 @@
   "arguments": {
     "execute": {
       "inArguments": [
-        {
-          "contactKey": "{{Contact.Key}}"
-        },
-        {
-          "to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}"
-        }
+        {"contactKey": "{{Contact.Key}}"},
+        {"to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}"},
+        {"accountSid":""},
+        {"authToken":""},
+        {"messagingService",""},
+         {"body",""},
+        {"from",""}
       ],
       "outArguments": [],
       "url": "https://requestbin.net/r/178955p1/execute",
