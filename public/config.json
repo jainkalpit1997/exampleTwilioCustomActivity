@@ -21,7 +21,7 @@
                 {
                   "email": "{{Contact.Default.EmailAddress}}"
                 },  
-                {   "to": "{{Contact.Attribute.'Synch Data'.TestDataEx.Phone}}" 
+                {   "to": "{{Contact.Attribute.TwilioSMSSend.Phone}}" 
                 }   
                                
             ],
