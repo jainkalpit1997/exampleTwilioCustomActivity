@@ -107,7 +107,7 @@ define([
             "email": "{{Contact.Default.EmailAddress}}",
             "contactKey" : "{{Contact.Key}}",
            // "to": "{{Contact.Attribute.TestDataEx.Phone}}" //<----This should map to your data extension name and phone number column
-            "to": "{{Contact.Attribute.TwilioSMSSend.Phone}}" 
+            "to": "{{Contact.Attribute.TwilioSMSSend.PhoneNumber}}" 
         }];
 
         payload['metaData'].isConfigured = true;
