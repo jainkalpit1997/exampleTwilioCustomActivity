@@ -28,7 +28,7 @@
       "verb": "POST",
       "body": "",
       "format": "json",
-      "useJwt": false,
+      "useJwt": true,
       "timeout": 2000
     }
   },
@@ -39,7 +39,7 @@
       "verb": "POST",
       "body": "",
       "format": "json",
-      "useJwt": false,
+      "useJwt": true,
       "timeout": 2000
     },
     "publish": {
@@ -47,7 +47,7 @@
       "verb": "POST",
       "body": "",
       "format": "json",
-      "useJwt": false,
+      "useJwt": true,
       "timeout": 2000
     },
     "validate": {
@@ -55,15 +55,15 @@
       "verb": "POST",
       "body": "",
       "format": "json",
-      "useJwt": false,
-      "timeout": 2002
+      "useJwt": true,
+      "timeout": 2000
     },
     "stop": {
       "url": "https://testkalpitapp.herokuapp.com/journeybuilder/stop",
       "verb": "POST",
       "body": "",
       "format": "json",
-      "useJwt": false,
+      "useJwt": true,
       "timeout": 2000
     }
   },
@@ -100,7 +100,7 @@
           },
           {
             "from": {
-              "dataType": "Phone",
+              "dataType": "String",
               "isNullable": false,
               "direction": "in"
             }
