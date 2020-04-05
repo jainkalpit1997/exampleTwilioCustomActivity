@@ -86,43 +86,36 @@
         "inArguments": [
           {
             "accountSid": {
-              "dataType": "String",
+              "dataType": "Text",
               "isNullable": false,
               "direction": "in"
             }
           },
           {
             "authToken": {
-              "dataType": "String",
+              "dataType": "Text",
               "isNullable": false,
               "direction": "in"
             }
           },
           {
             "from": {
-              "dataType": "String",
+              "dataType": "Text",
               "isNullable": false,
               "direction": "in"
             }
           },
           {
             "to": {
-              "dataType": "String",
+              "dataType": "Text",
               "isNullable": false,
               "direction": "in"
             }
           },
           {
             "body": {
-              "dataType": "String",
+              "dataType": "Text",
               "isNullable": false,
-              "direction": "in"
-            }
-          },
-          {
-            "email": {
-              "dataType": "Email",
-              "isNullable": true,
               "direction": "in"
             }
           }
