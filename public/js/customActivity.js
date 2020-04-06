@@ -7,17 +7,11 @@ define([
 
     var connection = new Postmonger.Session();
     var payload = {};
-    var lastStepEnabled = false;
-    var steps = [ // initialize to the same value as what's set in config.json for consistency
-        { "label": "Create SMS Message", "key": "step1" }
-    ];
-    var currentStep = steps[0].key;
-
     $(window).ready(onRender);
 
-    console.log('init'+JSON.stringify(connection.on('initActivity', initialize)));
-    console.log('On get tokens'+JSON.stringify(connection.on('requestedTokens', onGetTokens)));
-    console.log('On get end points'+JSON.stringify(connection.on('requestedEndpoints', onGetEndpoints)));
+    connection.on('initActivity', initialize);
+    connection.on('requestedTokens', onGetTokens);
+    connection.on('requestedEndpoints', onGetEndpoints);
 
     connection.on('clickedNext', save);
     //connection.on('clickedBack', onClickedBack);
@@ -25,9 +19,9 @@ define([
 
     function onRender() {
         // JB will respond the first time 'ready' is called with 'initActivity'
-        console.log('Ready '+JSON.stringify(connection.trigger('ready')));
-        console.log('Request Tokens '+ JSON.stringify(connection.trigger('requestTokens')));
-        console.log('Request End points '+JSON.stringify(connection.trigger('requestEndpoints')));
+        connection.trigger('ready');
+        connection.trigger('requestTokens');
+        connection.trigger('requestEndpoints');
     }
 
   function initialize(data) {
@@ -66,8 +60,7 @@ define([
 
                 if (key === 'body') {
                     $('#messageBody').val(val);
-                }                                                               
-
+                }
             })
         });
 
@@ -102,7 +95,7 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "to": "{{Contact.Attribute.TestDataEx.Phone}}"
+            "to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}"
         }];
 
         payload['metaData'].isConfigured = true;
