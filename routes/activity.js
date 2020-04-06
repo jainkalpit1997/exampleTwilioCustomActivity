@@ -72,7 +72,7 @@ exports.save = function (req, res) {
  */
 exports.execute = function (req, res) {
 
-    var requestBody = req.root.inArguments[0];
+    var requestBody = req.body.root.inArguments[0];
 
     const accountSid = requestBody.accountSid;
     const authToken = requestBody.authToken;
