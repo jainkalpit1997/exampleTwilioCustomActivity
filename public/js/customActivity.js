@@ -102,7 +102,7 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}"
+            "to": "{{Contact.Attribute.TestDataEx.Phone}}"
         }];
 
         payload['metaData'].isConfigured = true;
