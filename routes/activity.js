@@ -83,6 +83,7 @@ exports.execute = function (req, res) {
     const client = require('twilio')(accountSid, authToken); 
     console.log(' In activity.js  '+requestBody);
     console.log( ' In activity var '+from);
+     console.log( ' In activity messaging service '+messagingService);
     client.messages 
           .create({ 
              body: body,
