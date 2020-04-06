@@ -20,11 +20,10 @@
         {"accountSid":""},
         {"authToken":""},
         {"messagingService":""},
-         {"body":""},
-        {"from":""}
+         {"body":""}
       ],
       "outArguments": [],
-      "url": "https://enb5jm8hode7m.x.pipedream.net/journeybuilder/execute",
+      "url": "https:https://testkalpitapp.herokuapp.com/journeybuilder/execute",
       "verb": "POST",
       "body": "",
       "format": "json",
@@ -35,7 +34,7 @@
   "configurationArguments": {
     "applicationExtensionKey": "3d7df560-e1af-447c-9421-04f961ad0290",
     "save": {
-      "url": "https://enb5jm8hode7m.x.pipedream.net/journeybuilder/save",
+      "url": "https://testkalpitapp.herokuapp.com/journeybuilder/save",
       "verb": "POST",
       "body": "",
       "format": "json",
@@ -43,7 +42,7 @@
       "timeout": 2000
     },
     "publish": {
-      "url": "https://enb5jm8hode7m.x.pipedream.net/journeybuilder/publish",
+      "url": "https://testkalpitapp.herokuapp.com/journeybuilder/publish",
       "verb": "POST",
       "body": "",
       "format": "json",
@@ -51,7 +50,7 @@
       "timeout": 2000
     },
     "validate": {
-      "url": "https://enb5jm8hode7m.x.pipedream.net/journeybuilder/validate",
+      "url": "https://testkalpitapp.herokuapp.com/journeybuilder/validate",
       "verb": "POST",
       "body": "",
       "format": "json",
@@ -59,7 +58,7 @@
       "timeout": 2000
     },
     "stop": {
-      "url": "https://enb5jm8hode7m.x.pipedream.net/journeybuilder/stop",
+      "url": "https://testkalpitapp.herokuapp.com/journeybuilder/stop",
       "verb": "POST",
       "body": "",
       "format": "json",
