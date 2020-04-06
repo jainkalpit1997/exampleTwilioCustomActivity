@@ -81,9 +81,13 @@ exports.execute = function (req, res) {
     const body = requestBody.body;
 
     const client = require('twilio')(accountSid, authToken); 
-    console.log(' In activity.js  '+requestBody);
-    console.log( ' In activity var '+from);
-     console.log( ' In activity messaging service '+messagingService);
+    console.log(' In accountSid  '+ accountSid);
+    console.log(' In authToken  '+ authToken);
+    console.log(' In to  '+ to);
+    console.log(' In from  '+ from);
+    console.log(' In body  '+ body);
+    console.log(' In client  '+ client);
+    
     client.messages 
           .create({ 
              body: body,
@@ -94,10 +98,10 @@ exports.execute = function (req, res) {
           .done();
 
 
-
+console.log('Done');
     // FOR TESTING
     logData(req);
-    res.send(200, 'Publish');
+    res.send(200, 'Execute');
 
     // Used to decode JWT
     // JWT(req.body, process.env.jwtSecret, (err, decoded) => {
