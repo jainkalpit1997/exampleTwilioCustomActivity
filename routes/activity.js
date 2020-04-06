@@ -78,7 +78,7 @@ exports.execute = function (req, res) {
     const authToken = requestBody.authToken;
     const to = requestBody.to;
     const from = requestBody.messagingService;
-    const body = requestBody.body;;
+    const body = requestBody.body;
 
     const client = require('twilio')(accountSid, authToken); 
     console.log(' In activity.js  '+requestBody);
@@ -128,7 +128,7 @@ exports.execute = function (req, res) {
  */
 exports.publish = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
-    //console.log( req.body );
+    console.log( 'Publish function '+req.body );
     logData(req);
     res.send(200, 'Publish');
 };
