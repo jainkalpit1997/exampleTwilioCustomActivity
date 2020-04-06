@@ -71,7 +71,7 @@ exports.save = function (req, res) {
  * POST Handler for /execute/ route of Activity.
  */
 exports.execute = function (req, res) {
-    console.log( req.body );
+   alert('hi'+ req.body );
     var requestBody = req.body.inArguments[0];
 
     const accountSid = requestBody.accountSid;
