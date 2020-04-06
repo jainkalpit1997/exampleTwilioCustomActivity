@@ -28,15 +28,6 @@
     }
   },
   "configurationArguments": {
-    "applicationExtensionKey": "3d7df560-e1af-447c-9421-04f961ad0290",
-    "save": {
-      "url": "https://testkalpitapp.herokuapp.com/journeybuilder/save",
-      "verb": "POST",
-      "body": "",
-      "format": "json",
-      "useJwt": false,
-      "timeout": 2000
-    },
     "publish": {
       "url": "https://testkalpitapp.herokuapp.com/journeybuilder/publish",
       "verb": "POST",
@@ -44,79 +35,13 @@
       "format": "json",
       "useJwt": false,
       "timeout": 2000
-    },
-    "validate": {
-      "url": "https://testkalpitapp.herokuapp.com/journeybuilder/validate",
-      "verb": "POST",
-      "body": "",
-      "format": "json",
-      "useJwt": false,
-      "timeout": 2000
-    },
-    "stop": {
-      "url": "https://testkalpitapp.herokuapp.com/journeybuilder/stop",
-      "verb": "POST",
-      "body": "",
-      "format": "json",
-      "useJwt": false,
-      "timeout": 2000
     }
   },
-  "wizardSteps": [
-    {
-      "label": "Create SMS Message",
-      "key": "step1"
-    }
-  ],
   "userInterfaces": {
     "configModal": {
       "height": 600,
       "width": 800,
       "fullscreen": false
-    }
-  },
-  "schema": {
-    "arguments": {
-      "execute": {
-        "inArguments": [
-          {
-            "accountSid": {
-              "dataType": "String",
-              "isNullable": false,
-              "direction": "in"
-            }
-          },
-          {
-            "authToken": {
-              "dataType": "String",
-              "isNullable": false,
-              "direction": "in"
-            }
-          },
-          {
-            "from": {
-              "dataType": "String",
-              "isNullable": false,
-              "direction": "in"
-            }
-          },
-          {
-            "to": {
-              "dataType": "Phone",
-              "isNullable": false,
-              "direction": "in"
-            }
-          },
-          {
-            "body": {
-              "dataType": "String",
-              "isNullable": false,
-              "direction": "in"
-            }
-          }
-        ],
-        "outArguments": []
-      }
     }
   }
 }
