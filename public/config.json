@@ -16,11 +16,7 @@
     "execute": {
       "inArguments": [
         {"contactKey": "{{Contact.Key}}"},
-        {"to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}"},
-        {"accountSid":""},
-        {"authToken":""},
-        {"messagingService":""},
-         {"body":""}
+        {"to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}"}
       ],
       "outArguments": [],
       "url": "https:https://testkalpitapp.herokuapp.com/journeybuilder/execute",
@@ -85,35 +81,35 @@
         "inArguments": [
           {
             "accountSid": {
-              "dataType": "Text",
+              "dataType": "String",
               "isNullable": false,
               "direction": "in"
             }
           },
           {
             "authToken": {
-              "dataType": "Text",
+              "dataType": "String",
               "isNullable": false,
               "direction": "in"
             }
           },
           {
             "from": {
-              "dataType": "Text",
+              "dataType": "String",
               "isNullable": false,
               "direction": "in"
             }
           },
           {
             "to": {
-              "dataType": "Text",
+              "dataType": "Phone",
               "isNullable": false,
               "direction": "in"
             }
           },
           {
             "body": {
-              "dataType": "Text",
+              "dataType": "String",
               "isNullable": false,
               "direction": "in"
             }
