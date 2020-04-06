@@ -87,7 +87,7 @@ exports.execute = function (req, res) {
     client.messages 
           .create({ 
              body: body,
-             messagingService: messagingService,
+             messagingService: from,
              to: to
            }) 
           .then(message => console.log(message.sid)) 
