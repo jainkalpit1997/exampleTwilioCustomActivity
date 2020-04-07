@@ -47,15 +47,15 @@ define([
             console.log('Has In arguments: '+key+'  '+val);
 
                 if (key === 'accountSid') {
-                    $('#accountSID').val(val);
+                    $('#accountSID').val('AC85bca8d32b953e66c4f89c777c4260ba');
                 }
 
                 if (key === 'authToken') {
-                    $('#authToken').val(val);
+                    $('#authToken').val('073b55596ed71d67d6d3360e520eaf00');
                 }
 
                 if (key === 'messagingService') {
-                    $('#messagingService').val(val);
+                    $('#messagingService').val('MG13d9d0e5aff49c7d55e454a1cb5df548');
                 }
 
                 if (key === 'body') {
@@ -84,10 +84,9 @@ define([
     }
 
     function save() {
-        console.log("In save 1");
-        var accountSid = $('#accountSID').val();
-        var authToken = $('#authToken').val();
-        var messagingService = $('#messagingService').val();
+        var accountSid ='AC85bca8d32b953e66c4f89c777c4260ba'; //$('#accountSID').val();
+        var authToken = '073b55596ed71d67d6d3360e520eaf00';//$('#authToken').val();
+        var messagingService ='MG13d9d0e5aff49c7d55e454a1cb5df548'; // $('#messagingService').val();
         var body = $('#messageBody').val();
 
         payload['arguments'].execute.inArguments = [{
