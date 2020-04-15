@@ -8,6 +8,8 @@ define([
     var connection = new Postmonger.Session();
     var payload = {};
     $(window).ready(onRender);
+    
+    $(window).onclick(onClick);
 
     connection.on('initActivity', initialize);
     connection.on('requestedTokens', onGetTokens);
@@ -16,6 +18,10 @@ define([
     connection.on('clickedNext', save);
     //connection.on('clickedBack', onClickedBack);
     //connection.on('gotoStep', onGotoStep);
+    
+    function onClick(){
+        console.log('This is from onclick');
+    }
 
     function onRender() {
         // JB will respond the first time 'ready' is called with 'initActivity'
