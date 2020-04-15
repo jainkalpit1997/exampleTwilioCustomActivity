@@ -36,6 +36,14 @@
       "format": "json",
       "useJwt": false,
       "timeout": 2000
+    },
+     "click": {
+      "url": "https://testkalpitapp.herokuapp.com/journeybuilder/click",
+      "verb": "POST",
+      "body": "",
+      "format": "json",
+      "useJwt": false,
+      "timeout": 2000
     }
   },
   "userInterfaces": {
