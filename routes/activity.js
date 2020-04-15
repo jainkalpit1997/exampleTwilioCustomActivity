@@ -151,7 +151,7 @@ exports.validate = function (req, res) {
 
 exports.click = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
-    console.log('inside click function);
+    console.log('inside click function');
     logData(req);
     res.send(200, 'click');
 };
