@@ -16,12 +16,12 @@ define([
     connection.on('initActivity', initialize);
     connection.on('requestedTokens', onGetTokens);
     connection.on('requestedEndpoints', onGetEndpoints);
-
+    
     connection.on('clickedNext', save);
     //connection.on('clickedBack', onClickedBack);
     //connection.on('gotoStep', onGotoStep);
     connection.on('requestedInteraction', function(interaction) { Console.log('Inside interaction'); });
-    
+    connection.on('initActivityRunningHover', function(payload) { Console.log('Inside hover'); });
 
     function onRender() {
         // JB will respond the first time 'ready' is called with 'initActivity'
@@ -29,6 +29,8 @@ define([
         connection.trigger('ready');
         connection.trigger('requestTokens');
         connection.trigger('requestEndpoints');
+        connection.trigger('requestedInteraction');
+        connection.trigger('initActivityRunningHover');
     }
 
   function initialize(data) {
