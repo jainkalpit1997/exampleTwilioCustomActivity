@@ -20,7 +20,7 @@ define([
     connection.on('clickedNext', save);
     //connection.on('clickedBack', onClickedBack);
     //connection.on('gotoStep', onGotoStep);
-    
+    connection.on('requestedInteraction', function(interaction) { Console.log('Inside interaction'); });
     
 
     function onRender() {
