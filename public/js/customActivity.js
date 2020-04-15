@@ -9,7 +9,9 @@ define([
     var payload = {};
     $(window).ready(onRender);
     
-    $(window).onclick(onClick);
+    window.addEventListener("click", function(event) {
+        console.log('This is from onclick');
+    });
 
     connection.on('initActivity', initialize);
     connection.on('requestedTokens', onGetTokens);
@@ -19,9 +21,7 @@ define([
     //connection.on('clickedBack', onClickedBack);
     //connection.on('gotoStep', onGotoStep);
     
-    function onClick(){
-        console.log('This is from onclick');
-    }
+    
 
     function onRender() {
         // JB will respond the first time 'ready' is called with 'initActivity'
