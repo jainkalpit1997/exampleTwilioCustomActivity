@@ -19,7 +19,9 @@
         {"to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}"},
         {"From": "{{Contact.Attribute.TestDataEx.FromPhoneNumber}}"}
       ],
-      "outArguments": [],
+      "outArguments": [
+        {  "sid": "" }
+      ],
       "url": "https://testkalpitapp.herokuapp.com/journeybuilder/execute",
       "verb": "POST",
       "body": "",
