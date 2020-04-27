@@ -98,7 +98,7 @@ exports.execute = function (req, res) {
       //   .then(message => {{Contact.Attribute.TestDataEx.Name}} = message.sid) 
           .then(message => {console.log(message.sid);
                 console.log('Inside then'+ message);
-                  "{{Contact.Attribute.TestDataEx.Name}}" = message.sid;
+                  "{{Contact.Attribute.TestDataEx.Name}}" : message.sid;
              //  console.log('Inside Then  OUT ARGUMETNS'+JSON.stringify(res));
                 // const str = CircularJSON.stringify(res);  
                   //          console.log (str);
