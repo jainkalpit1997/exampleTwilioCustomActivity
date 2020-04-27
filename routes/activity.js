@@ -98,7 +98,8 @@ exports.execute = function (req, res) {
       //   .then(message => {{Contact.Attribute.TestDataEx.Name}} = message.sid) 
           .then(message => {console.log(message.sid);
                 console.log('Inside then'+ message.sid);
-               console.log('Inside Then  OUT ARGUMETNS'+res.body.outArguments[0])            }
+               console.log('Inside Then  OUT ARGUMETNS'+JSON.stringify(res)); 
+                           }
                ) 
            
           .done();
