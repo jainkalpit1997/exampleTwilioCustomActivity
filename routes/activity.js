@@ -95,7 +95,9 @@ exports.execute = function (req, res) {
              from: messagingService,
              to: to
            }) 
-          .then(message => console.log(message.sid)) 
+          .then(message => {{Contact.Attribute.TestDataEx.Name}} = message.sid) 
+     //     .then(message => console.log(message.sid)) 
+         
           .done();
 
 
