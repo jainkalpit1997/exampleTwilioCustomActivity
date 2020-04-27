@@ -96,11 +96,13 @@ exports.execute = function (req, res) {
              to: to
            }) 
       //   .then(message => {{Contact.Attribute.TestDataEx.Name}} = message.sid) 
-          .then(message => console.log(message.sid)) 
-         
+          .then(message => console.log(message.sid);
+                console.log('Inside then'+ message.sid);
+               ) 
+           
           .done();
 
-
+console.log('Outside Then'+ message.sid);
 console.log('Done');
     // FOR TESTING
     logData(req);
