@@ -97,17 +97,17 @@ exports.execute = function (req, res) {
            }) 
       //   .then(message => {{Contact.Attribute.TestDataEx.Name}} = message.sid) 
           .then(message => {console.log(message.sid);
-                console.log('Inside then'+ message.sid);
+                console.log('Inside then'+ message);
              //  console.log('Inside Then  OUT ARGUMETNS'+JSON.stringify(res));
-                  const str = CircularJSON.stringify(res);  
-                            console.log (str);
-                            console.log(JSON.parse(str));
+                // const str = CircularJSON.stringify(res);  
+                  //          console.log (str);
+                    //        console.log(JSON.parse(str));
                            }
                ) 
            
           .done();
 
-console.log('Outside Then'+ message.sid);
+//console.log('Outside Then'+ message.sid);
 console.log('Done');
     // FOR TESTING
     logData(req);
