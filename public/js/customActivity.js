@@ -31,6 +31,7 @@ define([
         connection.trigger('requestEndpoints');
         connection.trigger('requestedInteraction');
         connection.trigger('initActivityRunningHover');
+         connection.trigger('requestSchema');
     }
 
   function initialize(data) {
