@@ -16,8 +16,8 @@
     "execute": {
       "inArguments": [
         {"contactKey": "{{Contact.Key}}"},
-        {"to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}"},
-        {"From": "{{Contact.Attribute.TestDataEx.FromPhoneNumber}}"}
+        {"to": "{{Contact.Attribute.TwilioSMSSend.PhoneNumber}}"},
+        {"From": "{{Contact.Attribute.TwilioSMSSend.FromPhoneNumber}}"}
       ],
       "outArguments": [],
       "url": "https://testkalpitapp.herokuapp.com/journeybuilder/execute",
