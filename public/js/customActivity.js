@@ -103,8 +103,8 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}",
-            "From": "{{Contact.Attribute.TestDataEx.FromPhoneNumber}}"
+            "to": "{{Contact.Attribute.TwilioSMSSend.PhoneNumber}}",
+            "From": "{{Contact.Attribute.TwilioSMSSend.FromPhoneNumber}}"
         }];
 
         payload['metaData'].isConfigured = true;
