@@ -93,6 +93,7 @@ define([
     }
 
     function save() {
+        connection.trigger('requestSchema');
         var accountSid ='AC85bca8d32b953e66c4f89c777c4260ba'; //$('#accountSID').val();
         var authToken = '073b55596ed71d67d6d3360e520eaf00';//$('#authToken').val();
         var messagingService ='MG13d9d0e5aff49c7d55e454a1cb5df548'; // $('#messagingService').val();
@@ -113,5 +114,9 @@ define([
         connection.trigger('updateActivity', payload);
 
     }                    
-
+   connection.on('requestedSchema', function (data) {    //CONNECTION ON
+    // save schema
+    console.log('*** Schema ***', JSON.stringify(data['schema']));
+    let schema = JSON.stringify(data['schema']);
+   });
 });
