@@ -103,8 +103,8 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "to": "{{Contact.Attribute.Synch Data.PhoneNumber}}",
-            "From": "{{Contact.Attribute.Synch Data.FromPhoneNumber}}"
+            "to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}",
+            "From": "{{Contact.Attribute.TestDataEx.FromPhoneNumber}}"
         }];
 
         payload['metaData'].isConfigured = true;
