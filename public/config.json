@@ -16,8 +16,8 @@
     "execute": {
       "inArguments": [
         {"contactKey": "{{Contact.Key}}"},
-        {"to": "{{Contact.Attribute.Synch Data.PhoneNumber}}"},
-        {"From": "{{Contact.Attribute.Synch Data.FromPhoneNumber}}"}
+        {"to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}"},
+        {"From": "{{Contact.Attribute.TestDataEx.FromPhoneNumber}}"}
       ],
       "outArguments": [],
       "url": "https://testkalpitapp.herokuapp.com/journeybuilder/execute",
