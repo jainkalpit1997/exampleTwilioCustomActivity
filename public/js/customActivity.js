@@ -7,6 +7,7 @@ define([
 
     var connection = new Postmonger.Session();
     var payload = {};
+    var eventDefinitionKey;
     $(window).ready(onRender);
     
     window.addEventListener("click", function(event) {
@@ -105,8 +106,8 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "to": "{{Contact.Attribute.TestDataExCopy.PhoneNumber}}",
-            "From": "{{Contact.Attribute.TestDataExCopy.FromPhoneNumber}}"
+            "to": "{{Contact.Attribute." + eventDefinitionKey+".\"PhoneNumber\"}}",
+            "From": "{{Contact.Attribute." + eventDefinitionKey+".\"FromPhoneNumber\"}}"
         }];
 
         payload['metaData'].isConfigured = true;
@@ -118,7 +119,7 @@ define([
    connection.on('requestedTriggerEventDefinition',
   function(eventDefinitionModel) {
     if(eventDefinitionModel){
-       var eventDefinitionKey;
+       
         eventDefinitionKey = eventDefinitionModel.eventDefinitionKey;
         console.log(">>>Event Definition Key " + eventDefinitionKey);
         /*If you want to see all*/
