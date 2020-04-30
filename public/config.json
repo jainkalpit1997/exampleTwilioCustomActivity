@@ -15,9 +15,8 @@
   "arguments": {
     "execute": {
       "inArguments": [
-        {"contactKey": "{{Contact.Key}}"},
-        {"to": "{{Contact.Attribute.TestDataExCopy.PhoneNumber}}"},
-        {"From": "{{Contact.Attribute.TestDataExCopy.FromPhoneNumber}}"}
+        {"contactKey": "{{Contact.Key}}"}
+        
       ],
       "outArguments": [],
       "url": "https://testkalpitapp.herokuapp.com/journeybuilder/execute",
