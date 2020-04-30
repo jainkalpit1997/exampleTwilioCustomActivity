@@ -27,7 +27,7 @@ define([
                                 function(eventDefinitionModel) {
                                                      if(eventDefinitionModel){
        
-                                                 eventDefinitionKey = eventDefinitionModel.eventDefinitionKey;
+                                                 eventDefinitionKey = eventDefinitionModel.dataExtensionId;
                                                   console.log(">>>Event Definition Key " + eventDefinitionKey);
                                                    /*If you want to see all*/
                                                 console.log('>>>Request Trigger', 
