@@ -27,7 +27,7 @@ define([
                                 function(eventDefinitionModel) {
                                                      if(eventDefinitionModel){
        
-                                                 eventDefinitionKey = eventDefinitionModel.dataExtensionId;
+                                                 eventDefinitionKey = eventDefinitionModel.eventDefinitionKey;
                                                   console.log(">>>Event Definition Key " + eventDefinitionKey);
                                                    /*If you want to see all*/
                                                 console.log('>>>Request Trigger', 
@@ -117,8 +117,8 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "to": "{{Contact.Attribute." + eventDefinitionKey+".PhoneNumber}}",
-            "From": "{{Contact.Attribute." + eventDefinitionKey+".FromPhoneNumber}}"
+            "to": "{{Contact.Attribute.TestDataExCopy.PhoneNumber}}",
+            "From": "{{Contact.Attribute.TestDataExCopy.FromPhoneNumber}}"
         }];
 
         payload['metaData'].isConfigured = true;
