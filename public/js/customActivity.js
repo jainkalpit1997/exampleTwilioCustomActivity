@@ -21,7 +21,9 @@ define([
     connection.on('clickedNext', save);
     //connection.on('clickedBack', onClickedBack);
     //connection.on('gotoStep', onGotoStep);
-    connection.on('requestedInteraction', function(interaction) { Console.log('Inside interaction'); });
+    connection.on('requestedInteraction', function(interaction) { Console.log('Inside interaction');
+                                                       console.log(JSON.stringify(interaction));         
+                                                                });
     connection.on('initActivityRunningHover', function(payload) { Console.log('Inside hover'); });
     connection.on('requestedTriggerEventDefinition',
                                 function(eventDefinitionModel) {
@@ -35,6 +37,11 @@ define([
                                                  }
 
                                 });
+    connection.on('requestedSchema', function (data) {
+   // save schema
+        console.log('*** Schema ***', JSON.stringify(data['schema']));
+    });
+    
     function onRender() {
         // JB will respond the first time 'ready' is called with 'initActivity'
         console.log('Inside render');
@@ -44,6 +51,7 @@ define([
         connection.trigger('requestedInteraction');
         connection.trigger('initActivityRunningHover');
          connection.trigger('requestTriggerEventDefinition');
+        connection.trigger('requestSchema');
     }
 
   function initialize(data) {
