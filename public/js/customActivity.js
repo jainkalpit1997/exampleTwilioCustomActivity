@@ -23,7 +23,18 @@ define([
     //connection.on('gotoStep', onGotoStep);
     connection.on('requestedInteraction', function(interaction) { Console.log('Inside interaction'); });
     connection.on('initActivityRunningHover', function(payload) { Console.log('Inside hover'); });
+    connection.on('requestedTriggerEventDefinition',
+                                function(eventDefinitionModel) {
+                                                     if(eventDefinitionModel){
+       
+                                                 eventDefinitionKey = eventDefinitionModel.eventDefinitionKey;
+                                                  console.log(">>>Event Definition Key " + eventDefinitionKey);
+                                                   /*If you want to see all*/
+                                                console.log('>>>Request Trigger', 
+                                                JSON.stringify(eventDefinitionModel));
+                                                 }
 
+                                });
     function onRender() {
         // JB will respond the first time 'ready' is called with 'initActivity'
         console.log('Inside render');
@@ -116,16 +127,5 @@ define([
         connection.trigger('updateActivity', payload);
 
     }                    
-   connection.on('requestedTriggerEventDefinition',
-  function(eventDefinitionModel) {
-    if(eventDefinitionModel){
-       
-        eventDefinitionKey = eventDefinitionModel.eventDefinitionKey;
-        console.log(">>>Event Definition Key " + eventDefinitionKey);
-        /*If you want to see all*/
-        console.log('>>>Request Trigger', 
-        JSON.stringify(eventDefinitionModel));
-    }
-
-   });
+   
 });
