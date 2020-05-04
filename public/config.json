@@ -19,7 +19,7 @@
         
       ],
       "outArguments": [],
-      "url": "https://testkalpitapp.herokuapp.com/journeybuilder/execute",
+      "url": "https://YOUR_HEROKU_APP_NAME.herokuapp.com/journeybuilder/execute",
       "verb": "POST",
       "body": "",
       "format": "json",
@@ -29,7 +29,7 @@
   },
   "configurationArguments": {
     "publish": {
-      "url": "https://testkalpitapp.herokuapp.com/journeybuilder/publish",
+      "url": "https://YOUR_HEROKU_APP_NAME.herokuapp.com/journeybuilder/publish",
       "verb": "POST",
       "body": "",
       "format": "json",
@@ -37,7 +37,7 @@
       "timeout": 2000
     },
      "click": {
-      "url": "https://testkalpitapp.herokuapp.com/journeybuilder/click",
+      "url": "https://YOUR_HEROKU_APP_NAME.herokuapp.com/journeybuilder/click",
       "verb": "POST",
       "body": "",
       "format": "json",
