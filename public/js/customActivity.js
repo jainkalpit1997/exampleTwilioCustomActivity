@@ -87,6 +87,10 @@ define([
                 if (key === 'messagingService') {
                     $('#messagingService').val('MG13d9d0e5aff49c7d55e454a1cb5df548');
                 }
+                
+                if (key === 'dataExtension'){
+                    $('#dataExtension').val(val);
+                }
 
                 if (key === 'body') {
                     $('#messageBody').val(val);
@@ -119,14 +123,14 @@ define([
         var authToken = '073b55596ed71d67d6d3360e520eaf00';//$('#authToken').val();
         var messagingService ='MG13d9d0e5aff49c7d55e454a1cb5df548'; // $('#messagingService').val();
         var body = $('#messageBody').val();
-
+        var deName= $('#dataExtension').val();
         payload['arguments'].execute.inArguments = [{
             "accountSid": accountSid,
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-           "to": "{{Contact.Attribute.TestDataExCopy.PhoneNumber}}",
-        "From": "{{Contact.Attribute.TestDataExCopy.FromPhoneNumber}}"
+           "to": "{{Contact.Attribute."+deName+".PhoneNumber}}",
+        "From": "{{Contact.Attribute."+deName+".FromPhoneNumber}}"
         }];
 
         payload['metaData'].isConfigured = true;
