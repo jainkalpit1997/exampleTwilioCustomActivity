@@ -130,9 +130,10 @@ define([
         payload['arguments'].execute.inArguments = [{
             "accountSid": accountSid,
             "authToken": authToken,
+            "temp": dataExt;
             "messagingService": messagingService,
             "body": body,
-           "to": "{{Contact.Attribute."+dataExt+".PhoneNumber}}",
+           "to": "{{Contact.Attribute."+"Event."+eventDefinitionKey+".deName"+".PhoneNumber}}",
         "From": "{{Contact.Attribute.TestDataEX.FromPhoneNumber}}"
         }];
 
