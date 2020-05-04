@@ -125,8 +125,8 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-           "to": "{{Contact.Attribute.k.PhoneNumber}}",
-        "From": "{{Contact.Attribute.k.FromPhoneNumber}}"
+           "to": "{{Contact.Attribute.6bab3c3d-028a-ea11-a2e9-1402ec8ca03d.PhoneNumber}}",
+        "From": "{{Contact.Attribute.6bab3c3d-028a-ea11-a2e9-1402ec8ca03d.FromPhoneNumber}}"
         }];
 
         payload['metaData'].isConfigured = true;
