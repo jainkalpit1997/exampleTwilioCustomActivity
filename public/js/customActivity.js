@@ -126,14 +126,14 @@ define([
         var body = $('#messageBody').val();
         
         dataExtensionName = "{{Event."+eventDefinitionKey+".deName}}";
-        var dataExtension = String(dataExtensionName);
+        var dataExt = String(dataExtensionName);
         payload['arguments'].execute.inArguments = [{
             "accountSid": accountSid,
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-           "to": "{{Contact.Attribute.dataExtension.PhoneNumber}}",
-        "From": "{{Contact.Attribute."+"{{Event."+eventDefinitionKey+".deName}}"+".FromPhoneNumber}}"
+           "to": "{{Contact.Attribute."+dataExt+".PhoneNumber}}",
+        "From": "{{Contact.Attribute.TestDataEX.FromPhoneNumber}}"
         }];
 
         payload['metaData'].isConfigured = true;
