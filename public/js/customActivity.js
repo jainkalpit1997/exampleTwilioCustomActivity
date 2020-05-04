@@ -131,8 +131,8 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-           "to": "{{Contact.Attribute."+"{{Event."+eventDefinitionKey+".deName}}"+".PhoneNumber}}",
-        "From": "{{Contact.Attribute."+dataExtensionName+".FromPhoneNumber}}"
+           "to": "{{Contact.Attribute.TestDataEx.PhoneNumber}}",
+        "From": "{{Contact.Attribute."+"{{Event."+eventDefinitionKey+".deName}}"+".FromPhoneNumber}}"
         }];
 
         payload['metaData'].isConfigured = true;
