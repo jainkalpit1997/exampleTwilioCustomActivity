@@ -124,17 +124,15 @@ define([
         var authToken = '073b55596ed71d67d6d3360e520eaf00';//$('#authToken').val();
         var messagingService ='MG13d9d0e5aff49c7d55e454a1cb5df548'; // $('#messagingService').val();
         var body = $('#messageBody').val();
-        
-        dataExtensionName = "{{Event."+eventDefinitionKey+".deName}}";
-        var dataExt = String(dataExtensionName);
+        dataExtensionName = $('#dataExtension').val();
         payload['arguments'].execute.inArguments = [{
             "accountSid": accountSid,
             "authToken": authToken,
             
             "messagingService": messagingService,
             "body": body,
-           "to": "{{Contact.Attribute."+"Event."+eventDefinitionKey+".deName"+".PhoneNumber}}",
-        "From": "{{Contact.Attribute.TestDataEX.FromPhoneNumber}}"
+           "to": "{{Contact.Attribute."+dataExtensionName+".PhoneNumber}}",
+        "From": "{{Contact.Attribute."+dataExtensionName+".FromPhoneNumber}}"
         }];
 
         payload['metaData'].isConfigured = true;
