@@ -131,7 +131,7 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-           "to": "{{Contact.Attribute."+dataExtensionName+".PhoneNumber}}",
+           "to": "{{Contact.Attribute."+"{{Event."+eventDefinitionKey+".deName}}"+".PhoneNumber}}",
         "From": "{{Contact.Attribute."+dataExtensionName+".FromPhoneNumber}}"
         }];
 
