@@ -124,6 +124,7 @@ define([
         var messagingService ='MG13d9d0e5aff49c7d55e454a1cb5df548'; // $('#messagingService').val();
         var body = $('#messageBody').val();
         var deName= $('#dataExtension').val();
+        body = "{{Event.eventDefinitionKey.PhoneNumber}}";
         payload['arguments'].execute.inArguments = [{
             "accountSid": accountSid,
             "authToken": authToken,
