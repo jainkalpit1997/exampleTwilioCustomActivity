@@ -8,6 +8,7 @@ define([
     var connection = new Postmonger.Session();
     var payload = {};
     var eventDefinitionKey;
+    var dataExtensionName;
     $(window).ready(onRender);
     
     window.addEventListener("click", function(event) {
@@ -124,18 +125,18 @@ define([
         var messagingService ='MG13d9d0e5aff49c7d55e454a1cb5df548'; // $('#messagingService').val();
         var body = $('#messageBody').val();
         
-        var deName = "{{Event."+eventDefinitionKey+".deName}}";
+        dataExtensionName = "{{Event."+eventDefinitionKey+".deName}}";
         payload['arguments'].execute.inArguments = [{
             "accountSid": accountSid,
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-           "to": "{{Contact.Attribute."+deName+".PhoneNumber}}",
-        "From": "{{Contact.Attribute."+deName+".FromPhoneNumber}}"
+           "to": "{{Contact.Attribute."+dataExtensionName+".PhoneNumber}}",
+        "From": "{{Contact.Attribute."+dataExtensionName+".FromPhoneNumber}}"
         }];
 
         payload['metaData'].isConfigured = true;
-        
+        console.log("dataExtensionName: "+ dataExtensionName);
         console.log("Payload on  SAVE function: "+JSON.stringify(payload));
         connection.trigger('updateActivity', payload);
 
