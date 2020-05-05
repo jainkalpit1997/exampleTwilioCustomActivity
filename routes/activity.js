@@ -78,14 +78,14 @@ exports.execute = function (req, res) {
     const authToken = requestBody.authToken;
     const to = requestBody.to;
     const messagingService = requestBody.messagingService;
-    const from = requestBody.From;
+    
     const body = requestBody.body;
 
     const client = require('twilio')(accountSid, authToken); 
     console.log(' In accountSid  '+ accountSid);
     console.log(' In authToken  '+ authToken);
     console.log(' In to  '+ to);
-    console.log(' In from  '+ from);
+    
     console.log(' In body  '+ body);
     console.log(' In client  '+ client);
     
