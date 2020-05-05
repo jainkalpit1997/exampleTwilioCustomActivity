@@ -131,8 +131,8 @@ define([
             
             "messagingService": messagingService,
             "body": body,
-           "to": "{{Contact.Attribute."+dataExtensionName+".PhoneNumber}}",
-        "From": "{{Contact.Attribute."+dataExtensionName+".FromPhoneNumber}}"
+           "to": "{{Contact.Attribute."+dataExtensionName+".PhoneNumber}}"
+       
         }];
 
         payload['metaData'].isConfigured = true;
